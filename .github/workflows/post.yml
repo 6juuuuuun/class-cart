@@ -1,23 +1,10 @@
-name: Threads 게시
+name: Threads 예약 게시
 
 on:
-  # 수동 실행 (원할 때 바로 게시)
+  schedule:
+    # 매시 정각 체크 (UTC 기준, KST = UTC+9)
+    - cron: '0 * * * *'
   workflow_dispatch:
-    inputs:
-      content_folder:
-        description: '콘텐츠 폴더명 (예: 2026-03-14_가전_삼성프리스타일2)'
-        required: true
-      post_text:
-        description: '게시 텍스트 (1~2줄)'
-        required: true
-      comment_text:
-        description: '댓글 텍스트 (링크 포함)'
-        required: true
-
-  # 예약 실행 (cron - UTC 기준, 한국시간 -9시간)
-  # 예: 한국 21시 = UTC 12시 → '0 12 * * *'
-  # schedule:
-  #   - cron: '0 12 * * *'
 
 jobs:
   post:
@@ -33,86 +20,115 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests python-dotenv
+        run: pip install requests
 
-      - name: 이미지 URL 생성
-        id: urls
-        run: |
-          FOLDER="contents/threads/${{ github.event.inputs.content_folder }}"
-          BASE="https://raw.githubusercontent.com/${{ github.repository }}/main"
-
-          # URL 인코딩된 폴더 경로
-          ENCODED_FOLDER=$(python3 -c "import urllib.parse; print(urllib.parse.quote('${FOLDER}'))")
-
-          echo "slide1=${BASE}/${ENCODED_FOLDER}/slide1-hook.png" >> $GITHUB_OUTPUT
-          echo "slide2=${BASE}/${ENCODED_FOLDER}/slide2-product.png" >> $GITHUB_OUTPUT
-          echo "slide3=${BASE}/${ENCODED_FOLDER}/slide3-review.png" >> $GITHUB_OUTPUT
-          echo "slide4=${BASE}/${ENCODED_FOLDER}/slide4-cta.png" >> $GITHUB_OUTPUT
-
-      - name: 캐러셀 게시
-        id: post
+      - name: 예약 게시 실행
         env:
           THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
-          python3 -c "
-          import requests, time, os
+          python3 << 'PYEOF'
+          import json, os, time, requests, subprocess
+          from datetime import datetime, timezone, timedelta
 
-          token = os.environ['THREADS_ACCESS_TOKEN']
-          base = 'https://graph.threads.net/v1.0'
+          KST = timezone(timedelta(hours=9))
+          now = datetime.now(KST)
+          print(f"현재 시각 (KST): {now.strftime('%Y-%m-%d %H:%M')}")
 
-          # 사용자 ID
-          me = requests.get(f'{base}/me', params={'fields':'id','access_token':token}).json()
-          user_id = me['id']
-          print(f'User: {user_id}')
+          with open("schedule.json", "r", encoding="utf-8") as f:
+              schedule = json.load(f)
 
-          # 캐러셀 아이템 생성
-          urls = [
-            '${{ steps.urls.outputs.slide1 }}',
-            '${{ steps.urls.outputs.slide2 }}',
-            '${{ steps.urls.outputs.slide3 }}',
-            '${{ steps.urls.outputs.slide4 }}'
-          ]
+          posted = False
+          for item in schedule:
+              if item["status"] != "scheduled":
+                  continue
 
-          item_ids = []
-          for i, url in enumerate(urls):
-            r = requests.post(f'{base}/{user_id}/threads', params={
-              'media_type':'IMAGE','image_url':url,
-              'is_carousel_item':'true','access_token':token
-            }).json()
-            item_ids.append(r['id'])
-            print(f'  Item {i+1}: {r[\"id\"]}')
+              target = datetime.strptime(item["datetime"], "%Y-%m-%dT%H:%M").replace(tzinfo=KST)
+              diff_minutes = (now - target).total_seconds() / 60
 
-          # 캐러셀 컨테이너
-          time.sleep(10)
-          text = '''${{ github.event.inputs.post_text }}'''
-          r = requests.post(f'{base}/{user_id}/threads', params={
-            'media_type':'CAROUSEL','children':','.join(item_ids),
-            'text':text,'access_token':token
-          }).json()
-          carousel_id = r['id']
-          print(f'Carousel: {carousel_id}')
+              # 예약 시간 기준 -5분 ~ +55분 이내면 게시
+              if -5 <= diff_minutes <= 55:
+                  print(f"게시 시작: {item['folder']}")
 
-          # 발행
-          time.sleep(10)
-          r = requests.post(f'{base}/{user_id}/threads_publish', params={
-            'creation_id':carousel_id,'access_token':token
-          }).json()
-          post_id = r['id']
-          print(f'Published: {post_id}')
+                  token = os.environ["THREADS_ACCESS_TOKEN"]
+                  base = "https://graph.threads.net/v1.0"
+                  repo = os.environ["REPO"]
 
-          # 댓글
-          time.sleep(5)
-          comment = '''${{ github.event.inputs.comment_text }}'''
-          r = requests.post(f'{base}/{user_id}/threads', params={
-            'media_type':'TEXT','text':comment,
-            'reply_to_id':post_id,'access_token':token
-          }).json()
-          comment_cid = r['id']
+                  # 사용자 ID
+                  me = requests.get(f"{base}/me", params={"fields": "id", "access_token": token}).json()
+                  user_id = me["id"]
+                  print(f"User: {user_id}")
 
-          time.sleep(5)
-          r = requests.post(f'{base}/{user_id}/threads_publish', params={
-            'creation_id':comment_cid,'access_token':token
-          }).json()
-          print(f'Comment: {r[\"id\"]}')
-          print('Done!')
-          "
+                  # 이미지 URL
+                  import urllib.parse
+                  folder_encoded = urllib.parse.quote(f"contents/threads/{item['folder']}")
+                  base_url = f"https://raw.githubusercontent.com/{repo}/main/{folder_encoded}"
+                  slides = [
+                      f"{base_url}/slide1-hook.png",
+                      f"{base_url}/slide2-product.png",
+                      f"{base_url}/slide3-review.png",
+                      f"{base_url}/slide4-cta.png",
+                  ]
+
+                  # 캐러셀 아이템
+                  item_ids = []
+                  for i, url in enumerate(slides):
+                      r = requests.post(f"{base}/{user_id}/threads", params={
+                          "media_type": "IMAGE", "image_url": url,
+                          "is_carousel_item": "true", "access_token": token
+                      }).json()
+                      item_ids.append(r["id"])
+                      print(f"  Slide {i+1}: {r['id']}")
+
+                  # 캐러셀 컨테이너
+                  time.sleep(10)
+                  r = requests.post(f"{base}/{user_id}/threads", params={
+                      "media_type": "CAROUSEL", "children": ",".join(item_ids),
+                      "text": item["post_text"], "access_token": token
+                  }).json()
+                  carousel_id = r["id"]
+
+                  # 발행
+                  time.sleep(10)
+                  r = requests.post(f"{base}/{user_id}/threads_publish", params={
+                      "creation_id": carousel_id, "access_token": token
+                  }).json()
+                  post_id = r["id"]
+                  print(f"게시 완료: {post_id}")
+
+                  # 댓글
+                  time.sleep(5)
+                  r = requests.post(f"{base}/{user_id}/threads", params={
+                      "media_type": "TEXT", "text": item["comment_text"],
+                      "reply_to_id": post_id, "access_token": token
+                  }).json()
+                  time.sleep(5)
+                  r = requests.post(f"{base}/{user_id}/threads_publish", params={
+                      "creation_id": r["id"], "access_token": token
+                  }).json()
+                  print(f"댓글 완료: {r['id']}")
+
+                  # 상태 업데이트
+                  item["status"] = "posted"
+                  item["posted_at"] = now.strftime("%Y-%m-%d %H:%M")
+                  item["post_id"] = post_id
+                  posted = True
+              else:
+                  print(f"스킵: {item['folder']} (예약: {item['datetime']}, 차이: {diff_minutes:.0f}분)")
+
+          if posted:
+              with open("schedule.json", "w", encoding="utf-8") as f:
+                  json.dump(schedule, f, ensure_ascii=False, indent=2)
+
+              # schedule.json 업데이트 커밋
+              subprocess.run(["git", "config", "user.name", "class_cart bot"], check=True)
+              subprocess.run(["git", "config", "user.email", "bot@class-cart.com"], check=True)
+              subprocess.run(["git", "add", "schedule.json"], check=True)
+              subprocess.run(["git", "commit", "-m", "게시 완료 상태 업데이트"], check=True)
+              subprocess.run(["git", "push"], check=True,
+                  env={**os.environ, "GIT_ASKPASS": "echo", "GIT_TERMINAL_PROMPT": "0"})
+              print("schedule.json 업데이트 완료")
+          else:
+              print("게시할 항목 없음")
+          PYEOF
