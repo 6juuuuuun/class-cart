@@ -15,7 +15,7 @@ allowed-tools: Bash, Read, Write, Glob, Grep
 
 콘텐츠 폴더 경로: **$ARGUMENTS**
 
-경로가 없으면 `C:/partners/contents/threads/` 에서 가장 최근 폴더를 찾는다.
+경로가 없으면 `C:/class-cart/contents/threads/` 에서 가장 최근 폴더를 찾는다.
 
 ## 사전 확인
 
@@ -34,7 +34,7 @@ allowed-tools: Bash, Read, Write, Glob, Grep
 # 콘텐츠 폴더 확인
 ls "$ARGUMENTS"
 # 또는 최근 폴더
-ls C:/partners/contents/threads/ | sort -r | head -1
+ls C:/class-cart/contents/threads/ | sort -r | head -1
 ```
 
 `text.md`를 읽어서 게시할 내용을 사용자에게 보여준다:
@@ -50,29 +50,29 @@ ls C:/partners/contents/threads/ | sort -r | head -1
 
 ### 3단계: Threads 게시
 
-`C:/partners/automation/threads_api.py` 스크립트를 사용:
+`C:/class-cart/automation/threads_api.py` 스크립트를 사용:
 
 ```bash
 # 1) 캐러셀 포스트 생성 (이미지 4장 + 텍스트)
-python C:/partners/automation/threads_api.py post \
+python C:/class-cart/automation/threads_api.py post \
   --text-file "{폴더}/text.md" \
   --images "{폴더}/slide1-hook.png" "{폴더}/slide2-product.png" "{폴더}/slide3-lifestyle.png" "{폴더}/slide4-cta.png"
 
 # 2) 댓글에 쿠팡 링크 추가
-python C:/partners/automation/threads_api.py comment \
+python C:/class-cart/automation/threads_api.py comment \
   --post-id "{위에서 받은 post_id}" \
   --text-file "{폴더}/text.md" \
   --section "comment"
 
 # 3) 댓글 고정 (가능한 경우)
-python C:/partners/automation/threads_api.py pin \
+python C:/class-cart/automation/threads_api.py pin \
   --comment-id "{위에서 받은 comment_id}"
 ```
 
 ### 4단계: X 게시 (선택)
 
 ```bash
-python C:/partners/automation/x_api.py post \
+python C:/class-cart/automation/x_api.py post \
   --text-file "{폴더}/text.md" \
   --images "{폴더}/slide1-hook.png" "{폴더}/slide2-product.png" "{폴더}/slide3-lifestyle.png" "{폴더}/slide4-cta.png"
 ```

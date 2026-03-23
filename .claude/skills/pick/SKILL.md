@@ -71,8 +71,8 @@ allowed-tools: Bash, Read, Write, Grep, Glob, Agent, WebSearch, WebFetch
 설계된 상황별로 쿠팡파트너스 API를 호출한다.
 
 ```bash
-python C:/partners/automation/coupang_api.py search "키워드"
-python C:/partners/automation/coupang_api.py goldbox
+python C:/class-cart/automation/coupang_api.py search "키워드"
+python C:/class-cart/automation/coupang_api.py goldbox
 ```
 
 **검색 전략:**
@@ -116,7 +116,7 @@ python C:/partners/automation/coupang_api.py goldbox
 
 결과를 아래 경로에 저장:
 ```
-C:/partners/contents/threads/{날짜}_{카테고리}_{제품키워드}/pick.md
+C:/class-cart/contents/threads/{날짜}_{카테고리}_{제품키워드}/pick.md
 ```
 
 사용자에게 분석 결과와 선정 제품을 보여주고,
@@ -124,7 +124,7 @@ C:/partners/contents/threads/{날짜}_{카테고리}_{제품키워드}/pick.md
 
 ## 이전 콘텐츠 체크
 
-제작 전 반드시 `C:/partners/contents/threads/` 폴더를 확인하여:
+제작 전 반드시 `C:/class-cart/contents/threads/` 폴더를 확인하여:
 - 최근에 같은 카테고리를 다뤘는지
 - 최근에 같은 심리학 패턴을 썼는지
 카테고리와 패턴이 겹치지 않도록 한다.
