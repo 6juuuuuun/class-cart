@@ -19181,6 +19181,1551 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "z0yJZ",
+      "x": 0,
+      "y": 38800,
+      "name": "SHR S1",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1A14",
+      "layout": "vertical",
+      "gap": 100,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "tUPUT",
+          "name": "h1top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NrGTP",
+              "name": "h1cat",
+              "fill": "#4ADB7B",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rginj",
+                  "name": "h1catT",
+                  "fill": "#0D1A14",
+                  "content": "스하리",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "qyfWD",
+              "name": "h1logo",
+              "fill": "#4ADB7B",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nUr3S",
+          "name": "h1row",
+          "width": "fill_container",
+          "height": 420,
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "jQC4r",
+              "name": "h1ill",
+              "width": 400,
+              "height": 400,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774266859610.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 24
+            },
+            {
+              "type": "frame",
+              "id": "CMLtt",
+              "name": "h1r",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pB4cv",
+                  "name": "h1s",
+                  "fill": "#80D4A0",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "뒷삭 없는\n진짜 소통",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 70,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Bmmu0",
+                  "name": "h1k",
+                  "fill": "#4ADB7B",
+                  "content": "팔로우 · 하트 · 리포스트",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 50,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "BWIZY",
+          "name": "h1t",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "정직한\n스하리\n같이 하자",
+          "lineHeight": 1.2,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 120,
+          "fontWeight": "900"
+        },
+        {
+          "type": "frame",
+          "id": "22UZV",
+          "name": "h1bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "EptX1",
+              "name": "h1n",
+              "fill": "#2A5A40",
+              "content": "01 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "458Lw",
+              "name": "h1sw",
+              "fill": "#4ADB7B",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aYJim",
+      "x": 1180,
+      "y": 38800,
+      "name": "SHR S2",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1A14",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Rsfu1",
+          "name": "h2top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "8K5iA",
+              "name": "h2cat",
+              "fill": "#4ADB7B",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6iNzp",
+                  "name": "h2catT",
+                  "fill": "#0D1A14",
+                  "content": "스하리란?",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "FiT5X",
+              "name": "h2logo",
+              "fill": "#4ADB7B",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x4FpE",
+          "name": "h2ill",
+          "width": "fill_container",
+          "height": 380,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774266896221.png",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "diiSs",
+          "name": "h2title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "스 · 하 · 리",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 100,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "K7oMm",
+          "name": "h2desc",
+          "fill": "#80D4A0",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "스 → 팔로우 (서로 스치기)\n하 → 하트 (좋아요 누르기)\n리 → 리포스트 (공유하기)\n\n서로 응원하는 쓰레드 문화거든.\n근데 뒷삭하면 의미가 없지.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "gG3Ah",
+          "name": "h2bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "W6tnf",
+              "name": "h2n",
+              "fill": "#2A5A40",
+              "content": "02 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "5Sg26",
+              "name": "h2sw",
+              "fill": "#4ADB7B",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "qjUav",
+      "x": 2360,
+      "y": 38800,
+      "name": "SHR S3",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1A14",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "S7uSS",
+          "name": "h3top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "IeFsX",
+              "name": "h3cat",
+              "fill": "#4ADB7B",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bJB7p",
+                  "name": "h3catT",
+                  "fill": "#0D1A14",
+                  "content": "뒷삭 문제",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vRNKz",
+              "name": "h3logo",
+              "fill": "#4ADB7B",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Eg5sV",
+          "name": "h3ill",
+          "width": "fill_container",
+          "height": 380,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774267164094.png",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "8pG3F",
+          "name": "h3title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "이런 스하리는 의미 없어",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 80,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "bnBt6",
+          "name": "h3desc",
+          "fill": "#80D4A0",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "팔로우 하고 → 나중에 언팔\n하트 누르고 → 몰래 취소\n리포스트 하고 → 뒷삭\n\n숫자만 채우는 스하리는\n서로에게 시간 낭비야.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "l6opx",
+          "name": "h3bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "pIoYW",
+              "name": "h3n",
+              "fill": "#2A5A40",
+              "content": "03 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "ek8I3",
+              "name": "h3sw",
+              "fill": "#4ADB7B",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "KYs1l",
+      "x": 3540,
+      "y": 38800,
+      "name": "SHR S4",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1A14",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KTMOM",
+          "name": "h4top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ooy0O",
+              "name": "h4cat",
+              "fill": "#4ADB7B",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NFuk1",
+                  "name": "h4catT",
+                  "fill": "#0D1A14",
+                  "content": "룰 3가지",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "iepUr",
+              "name": "h4logo",
+              "fill": "#4ADB7B",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z9Bvr",
+          "name": "h4ill",
+          "width": "fill_container",
+          "height": 340,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774267221299.png",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "X7WKk",
+          "name": "h4title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "정직한 스하리 이렇게 해",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 80,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "0MAAu",
+          "name": "h4desc",
+          "fill": "#80D4A0",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "1. 끝까지 같이할 계정만 팔로우\n2. 좋으면 하트, 뒷삭 안 해\n3. 공유하고 싶으면 리포스트\n억지 아닌 진심 소통이\n결국 서로를 키워줘.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "CJDmB",
+          "name": "h4brand",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "iL5E4",
+              "name": "h4bl",
+              "opacity": 0.35,
+              "fill": "#4ADB7B",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "DhWwg",
+              "name": "h4bt",
+              "opacity": 0.35,
+              "fill": "#4ADB7B",
+              "content": "클라스 있는 장바구니",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "letterSpacing": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Az4NL",
+          "name": "h4bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YGaNh",
+              "name": "h4n",
+              "opacity": 0.4,
+              "fill": "#2A5A40",
+              "content": "04 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "lq9M6",
+              "name": "h4logo2",
+              "opacity": 0.4,
+              "fill": "#4ADB7B",
+              "content": "@class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "52Ung",
+      "x": -679,
+      "y": 40250,
+      "name": "DAISO S1",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#1A0F18",
+      "layout": "vertical",
+      "gap": 100,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "zQtXG",
+          "name": "h1top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GohAW",
+              "name": "h1cat",
+              "fill": "#FF7EB3",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rBKU3",
+                  "name": "h1catT",
+                  "fill": "#1A0F18",
+                  "content": "다이소",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "hSJyF",
+              "name": "h1logo",
+              "fill": "#FF7EB3",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x5xtE",
+          "name": "h1row",
+          "width": "fill_container",
+          "height": 420,
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xVif6",
+              "name": "h1ill",
+              "metadata": {
+                "type": "unsplash",
+                "username": "fenghua1975",
+                "link": "https://unsplash.com/@fenghua1975",
+                "author": "Fenghua"
+              },
+              "width": 400,
+              "height": 400,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1763994684311-f0a308c484d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQyNzMzMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 24
+            },
+            {
+              "type": "frame",
+              "id": "24GRQ",
+              "name": "h1r",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SiJE5",
+                  "name": "h1s",
+                  "fill": "#FFB8D4",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "만원 이하\n가성비 끝판왕",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 70,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "GUHcv",
+                  "name": "h1k",
+                  "fill": "#FF7EB3",
+                  "content": "수납 · 주방 · 인테리어",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 50,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "wR6lF",
+          "name": "h1t",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "다이소 꿀템\nTOP 3",
+          "lineHeight": 1.2,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 120,
+          "fontWeight": "900"
+        },
+        {
+          "type": "frame",
+          "id": "RiLHf",
+          "name": "h1bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "n275C",
+              "name": "h1n",
+              "fill": "#3D1A2E",
+              "content": "01 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "cWupf",
+              "name": "h1sw",
+              "fill": "#FF7EB3",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "fmcuB",
+      "x": 501,
+      "y": 40250,
+      "name": "DAISO S2",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#1A0F18",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "M0Nbr",
+          "name": "h2top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "16qbi",
+              "name": "h2cat",
+              "fill": "#FF7EB3",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IHw7i",
+                  "name": "h2catT",
+                  "fill": "#1A0F18",
+                  "content": "3위",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "QHPcZ",
+              "name": "h2logo",
+              "fill": "#FF7EB3",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fhATp",
+          "name": "h2ill",
+          "metadata": {
+            "type": "unsplash",
+            "username": "diljotbphotography",
+            "link": "https://unsplash.com/@diljotbphotography",
+            "author": "Diljot Singh"
+          },
+          "width": "fill_container",
+          "height": 380,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1753918525893-a7a6eb9d3551?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQyNzMzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "X3glL",
+          "name": "h2title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "3위 접착식 수납선반",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 80,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "Dista",
+          "name": "h2desc",
+          "fill": "#FFB8D4",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "벽에 붙이기만 하면 끝.\n자취방 좁아서 수납 고민?\n이거 하나면 정리 완료.\n\n3,000원.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "MTaNc",
+          "name": "h2bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Czzqs",
+              "name": "h2n",
+              "fill": "#3D1A2E",
+              "content": "02 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "CWcg3",
+              "name": "h2sw",
+              "fill": "#FF7EB3",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "eHpkh",
+      "x": 1681,
+      "y": 40250,
+      "name": "DAISO S3",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#1A0F18",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "f1eru",
+          "name": "h3top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Lrb25",
+              "name": "h3cat",
+              "fill": "#FF7EB3",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FOeYT",
+                  "name": "h3catT",
+                  "fill": "#1A0F18",
+                  "content": "2위",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "bsQ35",
+              "name": "h3logo",
+              "fill": "#FF7EB3",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AzY0q",
+          "name": "h3ill",
+          "metadata": {
+            "type": "unsplash",
+            "username": "tanyabarrow",
+            "link": "https://unsplash.com/@tanyabarrow",
+            "author": "Tanya Barrow"
+          },
+          "width": "fill_container",
+          "height": 380,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1772372043910-6127856f428d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQyNzMzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "4N33J",
+          "name": "h3title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "2위 실리콘 배수구 커버",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 80,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "UWxFK",
+          "name": "h3desc",
+          "fill": "#FFB8D4",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "머리카락 막히는 거\n이제 끝이야.\n씻고 나서 들어올리면 끝.\n\n1,000원.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "3VhYA",
+          "name": "h3bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "prUx3",
+              "name": "h3n",
+              "fill": "#3D1A2E",
+              "content": "03 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "QxqFn",
+              "name": "h3sw",
+              "fill": "#FF7EB3",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "i1Wfo",
+      "x": 2861,
+      "y": 40250,
+      "name": "DAISO S4",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#1A0F18",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0v3t8",
+          "name": "h4top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "eftcK",
+              "name": "h4cat",
+              "fill": "#FF7EB3",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "lJV1q",
+                  "name": "h4catT",
+                  "fill": "#1A0F18",
+                  "content": "1위",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "MXZcx",
+              "name": "h4logo",
+              "fill": "#FF7EB3",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1fogJ",
+          "name": "h4ill",
+          "metadata": {
+            "type": "unsplash",
+            "username": "sreiapythia",
+            "link": "https://unsplash.com/@sreiapythia",
+            "author": "Sreia Pythia"
+          },
+          "width": "fill_container",
+          "height": 340,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1718636268253-d6ad2a0aeee9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzQyNzMzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "zqGiI",
+          "name": "h4title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "1위 LED 무드등",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 80,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "3IB8H",
+          "name": "h4desc",
+          "fill": "#FFB8D4",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "5,000원에\n자취방 분위기 완전 바뀜.\n터치 한 번이면 3단 조절.\n\n이건 진짜 가격 실화.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "fxBA4",
+          "name": "h4brand",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SGSaU",
+              "name": "h4bl",
+              "opacity": 0.35,
+              "fill": "#FF7EB3",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 28,
+              "fontWeight": "900",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "rbtld",
+              "name": "h4bt",
+              "opacity": 0.35,
+              "fill": "#FF7EB3",
+              "content": "클라스 있는 장바구니",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "500",
+              "letterSpacing": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p0OYE",
+          "name": "h4bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YYynX",
+              "name": "h4n",
+              "fill": "#3D1A2E",
+              "content": "04 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "ZhND4",
+              "name": "h4logo2",
+              "fill": "#FF7EB3",
+              "content": "@class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "6UclT",
+      "x": 5221,
+      "y": 40250,
+      "name": "OTT S1",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1025",
+      "layout": "vertical",
+      "gap": 100,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ZkG4w",
+          "name": "h1top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "hNQ7F",
+              "name": "h1cat",
+              "fill": "#7B8FFF",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5wfSI",
+                  "name": "h1catT",
+                  "fill": "#0D1025",
+                  "content": "OTT",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "nUk44",
+              "name": "h1logo",
+              "fill": "#7B8FFF",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ij250",
+          "name": "h1row",
+          "width": "fill_container",
+          "height": 420,
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "d1Oif",
+              "name": "h1ill",
+              "width": 400,
+              "height": 400,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1774273369519.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 24
+            },
+            {
+              "type": "frame",
+              "id": "LU13f",
+              "name": "h1r",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8ZKaC",
+                  "name": "h1s",
+                  "fill": "#B0BFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "가성비 비교\n2026년 기준",
+                  "lineHeight": 1.4,
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 70,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "43zDR",
+                  "name": "h1k",
+                  "fill": "#7B8FFF",
+                  "content": "넷플릭스 · 티빙 · 쿠팡",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 50,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "MbOt7",
+          "name": "h1t",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "OTT\n가성비 순위",
+          "lineHeight": 1.2,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 120,
+          "fontWeight": "900"
+        },
+        {
+          "type": "frame",
+          "id": "FYgDJ",
+          "name": "h1bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "dnaOp",
+              "name": "h1n",
+              "fill": "#1A1840",
+              "content": "01 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "9Jn50",
+              "name": "h1sw",
+              "fill": "#7B8FFF",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wioma",
+      "x": 6401,
+      "y": 40250,
+      "name": "OTT S2",
+      "width": 1080,
+      "height": 1350,
+      "fill": "#0D1025",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        36,
+        56
+      ],
+      "justifyContent": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "3zTAw",
+          "name": "h2top",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "iLZAt",
+              "name": "h2cat",
+              "fill": "#7B8FFF",
+              "cornerRadius": 20,
+              "padding": [
+                10,
+                22
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UCsQ4",
+                  "name": "h2catT",
+                  "fill": "#0D1A14",
+                  "content": "스하리란?",
+                  "fontFamily": "Noto Sans KR",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "RZRIk",
+              "name": "h2logo",
+              "fill": "#7B8FFF",
+              "content": "class_cart",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "iknxk",
+          "name": "h2ill",
+          "width": "fill_container",
+          "height": 380,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "./images/generated-1774266896221.png",
+            "mode": "fill"
+          },
+          "cornerRadius": 24
+        },
+        {
+          "type": "text",
+          "id": "SqVqW",
+          "name": "h2title",
+          "fill": "#FFFFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "3위 티빙",
+          "lineHeight": 1.1,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 100,
+          "fontWeight": "900"
+        },
+        {
+          "type": "text",
+          "id": "z9zvX",
+          "name": "h2desc",
+          "fill": "#B0BFFF",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "한국 드라마 보려면 여기.\n오리지널 콘텐츠 꽤 많고\n광고형 기준 5,500원.\n\n한드 덕후면 여기야.",
+          "lineHeight": 1.65,
+          "fontFamily": "Noto Sans KR",
+          "fontSize": 60,
+          "fontWeight": "500"
+        },
+        {
+          "type": "frame",
+          "id": "6OBZg",
+          "name": "h2bot",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rFk6z",
+              "name": "h2n",
+              "fill": "#1A1840",
+              "content": "02 / 04",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "vX5mo",
+              "name": "h2sw",
+              "fill": "#7B8FFF",
+              "content": "밀어서 계속 보기 →",
+              "fontFamily": "Noto Sans KR",
+              "fontSize": 16,
+              "fontWeight": "600",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
