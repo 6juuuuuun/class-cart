@@ -63,7 +63,7 @@ allowed-tools: Bash, Read, Write, Glob, Grep, Agent, WebSearch, WebFetch, mcp__p
 - 키워드: 40px, fontWeight 700
 - 태그 필: 30px, padding [14,28], cornerRadius 28
 - 상단바 뱃지/로고: 20px
-- 하단바 넘버링/swipe: 16px
+- **하단바 없음** (넘버링/swipe 유도 삭제 — 영역 초과 방지)
 - 세로 가운데 정렬: justifyContent:"center"
 - 1페이지 gap: 100px / 2~4페이지 gap: 24~32px
 - 가로 배치 gap: 40px
